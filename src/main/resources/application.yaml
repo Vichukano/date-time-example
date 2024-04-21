@@ -1,0 +1,15 @@
+spring:
+  application.name: data-time-example
+  sql.init.mode: always
+  database: POSTGRESQL
+  hibernate.ddl-auto: none
+  show-sql: true
+
+spring.datasource:
+  initialization-mode: always
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/dateTimeExample
+  username: test
+  password: 123
+

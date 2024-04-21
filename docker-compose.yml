@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: 123 
+      POSTGRES_USER: test
+      POSTGRES_DB: dateTimeExample 
+      TZ: 'GMT+8'
+      PGTZ: 'GMT+8'
+    ports:
+      - "5432:5432"
